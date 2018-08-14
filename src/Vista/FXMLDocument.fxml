@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="archivoxml.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="337.0" prefWidth="486.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="archivoxml.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label fx:id="nombre" layoutX="27.0" layoutY="89.0" text="Nombre:" />
+      <Label fx:id="codigo" layoutX="28.0" layoutY="129.0" text="Código:" />
+      <Label fx:id="carrera" layoutX="29.0" layoutY="169.0" text="Carrera:" />
+      <Label layoutX="133.0" layoutY="8.0" text="ESTUDIANTE">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Tnombre" layoutX="77.0" layoutY="85.0" />
+      <TextField fx:id="Tcodigo" layoutX="77.0" layoutY="125.0" />
+      <TextField fx:id="Tcarrera" layoutX="77.0" layoutY="165.0" />
+      <Label fx:id="telefono" layoutX="243.0" layoutY="89.0" text="Telefono:" />
+      <Label fx:id="direccion" layoutX="243.0" layoutY="129.0" text="Dirección:" />
+      <Label fx:id="documento" layoutX="243.0" layoutY="169.0" text="Documento:" />
+      <Label fx:id="edad" layoutX="182.0" layoutY="220.0" text="Edad:" />
+      <TextField fx:id="Ttelefono" layoutX="317.0" layoutY="85.0" />
+      <TextField fx:id="Tdireccion" layoutX="317.0" layoutY="125.0" />
+      <TextField fx:id="Tdocumento" layoutX="317.0" layoutY="165.0" />
+      <TextField fx:id="Tedad" layoutX="219.0" layoutY="216.0" prefHeight="25.0" prefWidth="86.0" />
+      <Button layoutX="87.0" layoutY="267.0" mnemonicParsing="false" onAction="#AgregarEstudiante" prefHeight="56.0" prefWidth="129.0" text="Agregar estudiante" />
+      <Button layoutX="276.0" layoutY="267.0" mnemonicParsing="false" onAction="#GuardarXML" prefHeight="56.0" prefWidth="137.0" text="Guardar Archivo XML" />
     </children>
 </AnchorPane>

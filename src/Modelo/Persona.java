@@ -13,6 +13,12 @@ public class Persona implements Serializable{
     
     //***********************************************************************************
     
+    public Persona(){
+        
+    }
+    
+    //***********************************************************************************
+    
     public Persona(String Telefono, String Direccion, String Documento, int Edad){
         
         this.Telefono = Telefono;
